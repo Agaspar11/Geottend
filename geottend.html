@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Interface</title>
+  <link rel="stylesheet" href="geottend.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#timesheets">Timesheets</a></li>
+      <li><a href="#payroll">Payroll</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="timesheets">
+      <h2>Timesheets</h2>
+      <table id="timesheetTable">
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Hours Worked</th>
+          </tr>
+        </thead>
+        <tbody id="timesheetBody">
+          <!-- Timesheet data will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </section>
+    <section id="payroll">
+      <h2>Payroll Management</h2>
+      <form id="payrollForm">
+        <label for="employeeID">Employee ID:</label>
+        <input type="text" id="employeeID" name="employeeID" required>
+        <label for="paymentAmount">Payment Amount:</label>
+        <input type="number" id="paymentAmount" name="paymentAmount" required>
+        <button type="submit">Process Payment</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Attendance & Payroll System</p>
+  </footer>
+  <script src="geottend.js"></script>
+</body>
+</html>
